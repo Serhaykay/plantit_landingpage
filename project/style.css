@@ -1,0 +1,450 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: rgb(8, 146, 8);
+    --secondary-color: #888;
+}
+body{
+    background-color: #FAF9F9;
+    font-family: poppins, sans-serif;
+}
+.side-bar{
+    width: 300px;
+    background-color: 	#FFF;
+    height: 100%;
+    padding: 25px 0;
+    /* border-right: 1px solid #999; */
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-bottom: 45px;
+    padding-left: 25px;
+    cursor: pointer;
+}
+.logo img{
+    padding: 8px;
+    background-color: rgb(194, 245, 194);
+    color: var(--primary-color);
+    border-radius: 5px;
+    margin-right: 3px;
+}
+.logo h1{
+    color: var(--primary-color);
+}
+.nav ul{
+    display: block;
+}
+.nav ul li{
+    list-style-type: none;
+    padding: 18px 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 100%;
+    cursor: pointer;
+}
+.nav ul li:hover{
+    color: var(--primary-color);
+    border-left: 4px solid var(--primary-color);
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.nav ul li img{
+    padding-right: 12px;
+    height: 24px;
+    color: var(--secondary-color);
+    padding-left: 25px;
+}
+.nav ul li img:hover{
+    color: var(--primary-color)
+}
+.nav h3{
+    padding: 18px 25px;
+    font-size: 18px;
+
+}
+.card{
+    height: 300px;
+    width: 250px;
+    background-color: rgb(194, 245, 194);
+    padding: 5px;
+    text-align: center;
+    margin: 30px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.card .icon{
+    position: absolute;
+    top: -20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 5px 5px #000;
+    cursor: pointer;
+}
+.icon img{
+    height: 25px;
+    width: 25px;
+    color: var(--primary-color);
+}
+.card h1{
+    padding-top: 75px;
+    font-size: 18px;
+}
+.card p{
+    color: var(--secondary-color);
+    font-size: 12px;
+    line-height: 20px;
+    width: 180px;
+    padding: 20px 0 40px;
+}
+.card button{
+    padding: 10px 23px;
+    background-color: #FFF;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+.card button:hover{
+    background-color: var(--primary-color);
+    color: #FFF;
+    transition: all .3s ease-in;
+}
+.container{
+    display: flex;
+}
+.main{
+    padding: 10px 20px;
+    width: 100%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.greeting h1{
+    font-size: 16px;
+}
+.greeting p{
+    font-size: 12px;
+    color: var(--secondary-color);
+}
+.searchbox{
+    padding: 0 10px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.searchbox input{
+    border: none;
+    padding-left: 5px;
+    font-size: 12px;
+    width: 250px;
+    outline: none;
+}
+.searchbox img{
+    height: 16px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.image-place{
+    padding: 3px 8px;
+    margin-left: 5px;
+    background-color: #FFF;
+    box-shadow: 0px 5px 5px #888;
+    cursor: pointer;
+}
+.image-place:hover{
+    background-color: rgb(194, 245, 194);
+}
+.main-content{
+    padding: 20px 15px;
+    width: 65%;
+}
+.banner{
+    background: url('plants/muneeb-syed-x9NfeD3FpsE-unsplash.jpg') rgba(0, 0, 0, 0.7);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    cursor: pointer;
+}
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 25px;
+}
+.banner-text h1{
+    color: rgb(194, 245, 194);
+    font-size: 34px;
+}
+.banner-text p{
+    color:rgb(194, 245, 194);
+    font-size: 24px;
+}
+.btn{
+    padding: 15px 25px;
+    display: flex;
+}
+.btn button:first-child{
+    padding: 13px 28px;
+    background-color: #FFF;
+    border-radius: 8px;
+    border: none;
+    color: var(--primary-color);
+    margin-right: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn button:first-child:hover{
+    background-color: transparent;
+    border: 1px solid #FFF;
+    color: #FFF;
+    transition: ease .3s;
+}
+.btn button:last-child{
+    padding: 13px 28px;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn button:last-child:hover{
+    background-color: #fff;
+    border: none;
+    color: var(--primary-color);
+    transition: ease .3s;
+}
+.featured{
+    padding-top: 40px;
+
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.title h1{
+    font-size: 26px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+ .view{
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.view:hover{
+    color: var(--primary-color);
+}
+.view img{
+    padding-left: 5px;
+    height: 12px;
+}
+.view p{
+    font-size: 12px;
+}
+.featured-card{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box{
+    background-color: #FFF;
+    padding: 20px 5px;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px 5px #888;
+    cursor: pointer;
+}
+.box:hover{
+    border: 1px solid rgb(194, 245, 194);
+    box-shadow: 0 5px 5px 5px rgb(194, 245, 194);
+    transform: translateY(-10px);
+    transition: ease-out .7s;
+}
+.box h1{
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+}
+.sellers{
+    width: 100%;
+    padding: 100px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.seller-col{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.seller-box{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px 5px #888;
+    cursor: pointer;
+}
+.seller-box:hover{
+    border: 1px solid rgb(194, 245, 194);
+    box-shadow: 0 5px 5px 5px rgb(194, 245, 194);
+    transform: translateX(10px);
+    transition: ease-out .7s;
+}
+.seller-images{
+    display: flex;
+}
+.seller-images img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: -5px;
+    border: 2px solid #FFF;
+}
+.seller-text{
+    border-left: 2px solid var(--primary-color);
+    padding-left: 10px;
+    margin-left: 20px;
+    width: 100%;
+}
+.seller-text p:first-child{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    width: 100%;
+}
+.seller-text .date{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.date p{
+    color: var(--secondary-color);
+    font-size: 12px;
+}
+.page{
+    display: flex;
+}
+.right-col{
+    width: 35%;
+    padding: 20px 15px;
+}
+.banner-2{
+    background-image: url('plants/scott-webb-C6oPXOatFD8-unsplash.jpg');
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 25px 10px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.banner-2 h1{
+    color: var(--primary-color);
+    font-size: 28px;
+}
+.text-col{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    padding-top: 30px;
+    color: var(--primary-color);
+}
+.goto{
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+}
+.goto:hover{
+    transform: translateX(5px);
+    transition: .7s ease-in;
+}
+.goto h6{
+    font-size: 12px;
+    padding-right: 8px;
+    color: var(--primary-color);
+}
+.notification{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 14px;
+    cursor: pointer;
+    background-color: #FFF;
+    padding-top: 14px;
+    border-radius: 15px;
+}
+.notification:hover{
+    transform: translateY(-10px);
+    transition:all .5s ease-in-out;
+}
+.notification p{
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.notif-profile{
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+.notif-profile img{
+    border-radius: 50%;
+    
+}
+.notif-profile h3{
+    font-size: 14px;
+    color: #666;
+    padding-left: 10px;
+}
+.notif-profile p{
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
